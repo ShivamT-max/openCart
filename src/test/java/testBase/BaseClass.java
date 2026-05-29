@@ -20,7 +20,7 @@ import com.beust.jcommander.Parameter;
 
 public class BaseClass {
 
-	public Logger logger;
+//	public Logger logger;
 	public WebDriver driver;
 	public Properties prop;
 	

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-15T15:14:11 IST" name="MasterSuite" finished-at="2026-05-15T15:14:21 IST" duration-ms="9884">
+  <suite started-at="2026-05-29T22:55:05 IST" name="MasterSuite" finished-at="2026-05-29T22:55:12 IST" duration-ms="6372">
     <groups>
     </groups>
-    <test started-at="2026-05-15T15:14:11 IST" name="Test" finished-at="2026-05-15T15:14:21 IST" duration-ms="9884">
-      <class name="testCases.TC003_LoginTestDDT">
-        <test-method is-config="true" signature="setUP(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginTestDDT@5bda8e08]" started-at="2026-05-15T15:14:11 IST" name="setUP" finished-at="2026-05-15T15:14:17 IST" duration-ms="6157" status="PASS">
+    <test started-at="2026-05-29T22:55:05 IST" name="Test" finished-at="2026-05-29T22:55:12 IST" duration-ms="6372">
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setUP(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@1e800aaa]" started-at="2026-05-29T22:55:05 IST" name="setUP" finished-at="2026-05-29T22:55:09 IST" duration-ms="3303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,59 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginTestDDT@5bda8e08]" started-at="2026-05-15T15:14:20 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-05-15T15:14:20 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "this.sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "this.sheet" is null
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "this.sheet" is null
-at utilities.ExcelUtilities.getRowCount(ExcelUtilities.java:47)
-at utilities.DataProviders.getData(DataProviders.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@1e800aaa]" started-at="2026-05-29T22:55:09 IST" name="verify_login" finished-at="2026-05-29T22:55:11 IST" duration-ms="2740" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_LoginTestDDT@5bda8e08]" started-at="2026-05-15T15:14:20 IST" name="tearDown" finished-at="2026-05-15T15:14:21 IST" duration-ms="219" status="PASS">
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LoginTest@1e800aaa]" started-at="2026-05-29T22:55:11 IST" name="tearDown" finished-at="2026-05-29T22:55:12 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC003_LoginTestDDT -->
+      </class> <!-- testCases.TC002_LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- MasterSuite -->
 </testng-results>

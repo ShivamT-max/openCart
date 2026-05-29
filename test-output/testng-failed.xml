@@ -5,13 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC003_LoginTestDDT">
+      <class name="testCases.TC002_LoginTest">
         <methods>
-          <include name="verify_loginDDT"/>
           <include name="tearDown"/>
+          <include name="verify_login"/>
           <include name="setUP"/>
         </methods>
-      </class> <!-- testCases.TC003_LoginTestDDT -->
+      </class> <!-- testCases.TC002_LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MasterSuite] -->
